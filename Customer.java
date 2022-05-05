@@ -112,19 +112,19 @@ public class Customer extends StudentName implements CustomStudentData{
                 System.out.print("Choose: ");
                 int Choose = scanner.nextInt(); 
             
-                if(select == 1) {
+                if(Choose == 1) {
                     menu.test2();
                     menu.howbook();
                 }
-                if(select == 2){
+                if(Choose == 2){
                     menu.test3();
                     menu.howbook();
                 }
-                if(select == 3){
+                if(Choose == 3){
                     menu.test4();
                     menu.howbook();
                 }
-                if(select == 4){
+                if(Choose == 4){
                     continue;
                 }
             }

@@ -10,7 +10,6 @@ public class Menuall extends BookInheritance{
     private ArrayList<String> AB = new ArrayList<String>();
     private ArrayList<String> BC = new ArrayList<String>();
     private int many = 0;
-    private int i = 0;
     private int day = 0;
     private int k = 0;
     private int[] hab = new int[6];
@@ -110,7 +109,7 @@ public class Menuall extends BookInheritance{
         char confirm = scanner.next().charAt(0);
 
         if(confirm == 'Y' ){
-            cm.warings();
+            comeback.Warnings();
             System.out.print("Input Day " );
             day = scanner.nextInt();
             if(true){
@@ -136,7 +135,6 @@ public class Menuall extends BookInheritance{
         }
         if(confirm == 'D' ){
             System.out.println("Cancel Order");
-            i = 0;
             AB.clear();
             BC.clear();
         }
@@ -188,7 +186,7 @@ public class Menuall extends BookInheritance{
                     
                     System.out.print("How much to pay?: ");
                     int pay = scanner.nextInt();
-                    if(pay >= l){
+                    if(pay >= mulct){
                         System.out.println("Paided");
                         System.out.println("Change money " + (pay-mulct));
                     }else{

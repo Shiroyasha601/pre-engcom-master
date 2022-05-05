@@ -4,7 +4,7 @@ public class Main {
         
         returnAbook comeback = new returnAbook();
 
-        comeback.first();
+        comeback.First();
         Customer C = new Customer();
         C.Customer();
         C.register();

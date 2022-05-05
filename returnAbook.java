@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class returnAbook{
     Scanner scanner = new Scanner(System.in);
-    char cd;
+    char user;
     public void First(){
-        Customer cu = new Customer();
+        Customer user = new Customer();
         while(true) {
             System.out.println("Welcome ");
             System.out.println("1. Register");
@@ -13,11 +13,11 @@ public class returnAbook{
             System.out.print("Choose: ");
             int choice = scanner.nextInt();
             if(choice == 1){
-                cu.register();
+                user.register();
                 
             }
             else if(choice == 2){
-                cu.Login();
+                user.Login();
                 break;
             }
             else{
